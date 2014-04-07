@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_user_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/add_user_fragment_text_view_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/first_name"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/add_user_fragment_edit_text_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/add_user_fragment_text_view_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/last_name"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/add_user_fragment_edit_text_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/add_user_fragment_text_view_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/gender"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/add_user_fragment_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2" >
+
+        <RadioButton
+            android:id="@+id/add_user_fragment_radio_button_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/gender_male" />
+
+        <RadioButton
+            android:id="@+id/add_user_fragment_radio_button_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/gender_female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/add_user_fragment_text_view_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/phone_number"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/add_user_fragment_edit_text_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/add_user_fragment_button_add"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/button_add" />
+
+        <Button
+            android:id="@+id/add_user_fragment_button_overview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/button_overview" />
+    </LinearLayout>
+
+</LinearLayout>
